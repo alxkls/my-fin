@@ -1,3 +1,9 @@
 #Idea files
 *.iml
 /.idea
+
+#
+/mf-discovery/target
+/mf-core/target
+/mf-config-server/target
+/mf-gateway/target
