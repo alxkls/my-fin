@@ -1,7 +1,6 @@
 package com.alxkls.mfcore.map;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -12,13 +11,15 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "MFTRANSACTIONS")
+@Entity
 public class MFTransaction {
-
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
 
     private Long UserId;
-    private MFTransactionType transactionType;
+    private String transactionType;
     private double transactionAmount;
     private LocalDateTime transactionTime;
     private String typeOfService;
