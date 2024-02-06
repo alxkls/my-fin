@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MfConfigServerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MfConfigServerApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(MfConfigServerApplication.class, args);
+  }
 
 }

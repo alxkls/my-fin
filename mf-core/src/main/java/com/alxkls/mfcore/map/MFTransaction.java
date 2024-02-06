@@ -4,10 +4,12 @@ import java.util.Date;
 
 
 public record MFTransaction(
-        Long userId,
-        String transactionType,
-        double transactionAmount,
-        Date transactionTime,
-        String typeOfService,
-        String serviceProvider
-        ) {}
+    Long userId,
+    String transactionType,
+    double transactionAmount,
+    Date transactionTime,
+    String typeOfService,
+    String serviceProvider
+) {
+
+}

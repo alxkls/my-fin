@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@FeignClient(name = "mf-users", url="${application.config.mf-users-url}")
+@FeignClient(name = "mf-users", url = "${application.config.mf-users-url}")
 public interface MFUserClient {
 
-    @PostMapping("/save")
-    @ResponseStatus(HttpStatus.ACCEPTED)
-    void saveUser(MFUser user);
+  @PostMapping("/save")
+  @ResponseStatus(HttpStatus.ACCEPTED)
+  void saveUser(MFUser user);
 
-    @GetMapping("{user-id}")
-    MFUserTransactions findUser(@PathVariable(name="user-id") Long userId);
+  @GetMapping("{user-id}")
+  MFUserTransactions findUser(@PathVariable(name = "user-id") Long userId);
 }

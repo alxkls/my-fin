@@ -9,23 +9,23 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class CoreService
-{
-    private final MFUserClient userClient;
-    private final MFTransactionClient transactionClient;
+public class CoreService {
 
-    public MFUserTransactions getUserTransactions(Long userId){
-        var user = userClient.findUser(userId);
+  private final MFUserClient userClient;
+  private final MFTransactionClient transactionClient;
 
-        var transactions = transactionClient.getTransactionsByUserId(userId);
+  public MFUserTransactions getUserTransactions(Long userId) {
+    var user = userClient.findUser(userId);
 
-        return MFUserTransactions.builder()
-                .name(user.getName())
-                .currency(user.getCurrency())
-                .startCapital(user.getStartCapital())
-                .transactions(transactions)
-                .build();
+    var transactions = transactionClient.getTransactionsByUserId(userId);
 
-    }
+    return MFUserTransactions.builder()
+        .name(user.getName())
+        .currency(user.getCurrency())
+        .startCapital(user.getStartCapital())
+        .transactions(transactions)
+        .build();
+
+  }
 
 }

@@ -13,10 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/")
 public class MFCoreController {
-    private final CoreService coreService;
-    @GetMapping("/user-trs/{user-id}")
-    public ResponseEntity<MFUserTransactions> getUserTransactions(@PathVariable(name = "user-id") Long userId){
-        return ResponseEntity.ok(coreService.getUserTransactions(userId));
-    }
+
+  private final CoreService coreService;
+
+  @GetMapping("/user-trs/{user-id}")
+  public ResponseEntity<MFUserTransactions> getUserTransactions(
+      @PathVariable(name = "user-id") Long userId) {
+    return ResponseEntity.ok(coreService.getUserTransactions(userId));
+  }
 
 }
