@@ -6,5 +6,6 @@
 /mf-discovery/target
 /mf-users/target
 /mf-transactions/target
+/mf-core/target
 /mf-config-server/target
 /mf-gateway/target
