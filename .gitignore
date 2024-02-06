@@ -4,6 +4,7 @@
 
 #
 /mf-discovery/target
-/mf-core/target
+/mf-users/target
+/mf-transactions/target
 /mf-config-server/target
 /mf-gateway/target
