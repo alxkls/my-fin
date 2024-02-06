@@ -11,3 +11,8 @@ spring:
     name: mf-core
   config:
     import: optional:configserver:http://localhost:8888
+
+application:
+  config:
+    mf-transactions-url: http://localhost:8071/api/v1/transactions
+    mf-users-url: http://localhost:8070/api/v1/user
