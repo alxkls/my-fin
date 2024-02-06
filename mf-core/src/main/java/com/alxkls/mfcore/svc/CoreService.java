@@ -6,7 +6,6 @@ import com.alxkls.mfcore.client.MFUserClient;
 import com.alxkls.mfcore.map.MFUserTransactions;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Service
 @RequiredArgsConstructor

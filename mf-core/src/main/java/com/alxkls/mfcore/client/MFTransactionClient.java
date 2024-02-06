@@ -1,7 +1,6 @@
 package com.alxkls.mfcore.client;
 
 import com.alxkls.mfcore.map.MFTransaction;
-import org.apache.catalina.LifecycleState;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;

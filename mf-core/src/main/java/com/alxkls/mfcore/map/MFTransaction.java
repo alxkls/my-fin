@@ -1,10 +1,5 @@
 package com.alxkls.mfcore.map;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.Date;
 
 
@@ -15,5 +10,4 @@ public record MFTransaction(
         Date transactionTime,
         String typeOfService,
         String serviceProvider
-        ) {
-}
+        ) {}
